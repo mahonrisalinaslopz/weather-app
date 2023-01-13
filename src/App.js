@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "./App.css";
-import Main from "./components/Date/Main";
-import Hightlights from "./components/Hightlights_Weather";
+import Main from "./components/Principal";
+import Hightlights from "./components/Destacados";
 
 const dateToStr = (date) => {
   var today = new Date(date);
@@ -189,7 +189,6 @@ function App() {
     getLocation();
   }, []);
 
-  //cambiar unidad C<=>F
   const unit_change = () => {
     if (Convert === "C") {
       settodayTemp(Math.round(todayTemp * (9 / 5) + 32));

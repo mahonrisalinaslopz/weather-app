@@ -1,9 +1,9 @@
 import React from "react";
 import "../App.css";
-import WeatherComing from "./Days/Forecast_Weather";
-import TodaysHighlights from "./Today/Today_Hightlight";
+import ClimaDiario from "./Pronostico";
+import Destacados from "./Clima_Destacado";
 
-const Hightlights = (props) => {
+const ClimaDestacado = (props) => {
   return (
     <div className="container_weather">
       <div className="temp_button">
@@ -26,24 +26,24 @@ const Hightlights = (props) => {
           </div>
         )}
       </div>
-      <WeatherComing
+      <ClimaDiario
         daily_data={props.daily_data}
         unit={props.unit}
         ForeTemp={props.ForeTemp}
-        ForeIcon={props.ForeIcon}
         ForeDate={props.ForeDate}
+        ForeIcon={props.ForeIcon}
       />
-
       <p className="today_hightlight">Today's Hightlights</p>
-      <TodaysHighlights
-        wind_speed={props.wind_speed}
+      <Destacados
         wind_direc={props.wind_direc}
-        humid={props.humid}
-        visib={props.visib}
+        wind_speed={props.wind_speed}
         air_pre={props.air_pre}
+        visib={props.visib}
+        humid={props.humid}
       />
+      <p className="footer">By Maho</p>
     </div>
   );
 };
 
-export default Hightlights;
+export default ClimaDestacado;

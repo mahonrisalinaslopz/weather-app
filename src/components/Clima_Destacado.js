@@ -1,11 +1,11 @@
 import React from "react";
-import CompassDirection from "../Brujula/Brujula";
+import CompassDirection from "./Brujula";
 
-const TodaysHighlights = (props) => {
+const Clima_Destacado = (props) => {
   return (
     <div className="hightlight_container">
       <div className="row1">
-        <div className="Hbox1">
+        <div className="one-box">
           <p>Wind Status</p>
           <div className="mph">
             {" "}
@@ -24,7 +24,7 @@ const TodaysHighlights = (props) => {
             <div className="wind_direction">{CompassDirection(props.wind_direc)}</div>
           </div>
         </div>
-        <div className="Hbox2">
+        <div className="two-box">
           <p>Humidity</p>
           <div className="mph">
             {props.humid}
@@ -49,14 +49,14 @@ const TodaysHighlights = (props) => {
         </div>
       </div>
       <div className="row2">
-        <div className="Hbox3">
+        <div className="three-box">
           <p>Visibility</p>
           <div className="mph">
             {props.visib / 1000}
             <span> miles</span>
           </div>
         </div>
-        <div className="Hbox4">
+        <div className="four-box">
           <p>Air Pressure</p>
           <div className="mph">
             {props.air_pre} <span> mb</span>
@@ -67,4 +67,4 @@ const TodaysHighlights = (props) => {
   );
 };
 
-export default TodaysHighlights;
+export default Clima_Destacado;

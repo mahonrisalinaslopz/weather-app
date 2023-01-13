@@ -4,18 +4,18 @@ import "../index.css";
 
 const dateToString = () => {
   var today = new Date();
-  var month = today.toLocaleString("en-us", { month: "short" });
   var weekday = today.toLocaleString("en-us", { weekday: "short" });
+  var month = today.toLocaleString("en-us", { month: "short" });
   var day = today.getDate();
   var today_string = weekday + ", " + day + " " + month;
 
   return today_string;
 };
 
-const TodayWeather = (props) => {
+const ClimaHoy = (props) => {
   return (
     <div className="today_weather">
-      <div className="box1">
+      <div className="cont-one">
         <button onClick={props.searchclick} className="search_button">
           Seach for places
         </button>
@@ -27,7 +27,7 @@ const TodayWeather = (props) => {
       <div className="cloud_background"></div>
 
       <div className="background">
-        <div className="weather_type_image">
+        <div className="weather-imagen">
           <img alt="" src={require("../images/Clear.png")} />
         </div>
       </div>
@@ -47,7 +47,7 @@ const TodayWeather = (props) => {
         <div className="today_date">{dateToString()}</div>
       </div>
 
-      <div className="box2">
+      <div className="cont-two">
         <div className="location">
           <span className="material-icons">location_on</span>
         </div>
@@ -57,4 +57,4 @@ const TodayWeather = (props) => {
   );
 };
 
-export default TodayWeather;
+export default ClimaHoy;

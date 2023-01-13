@@ -3,6 +3,7 @@
     height: 1080px;
     display: flex;
     flex-direction: row;
+    margin: auto;
 }
 
 .today_weather {
@@ -21,7 +22,7 @@
     background: #1E213A;
 }
 
-.box1 {
+.cont-one {
     margin-top: 42px;
     margin-bottom: 15px;   
     flex-direction: row;
@@ -34,7 +35,7 @@
     font-weight: 500;
     margin-left: 1.5em;
     background: #6E707A;
-    font-family: 'Raleway';
+    font-family: 'system-ui';
     font-style: normal;
     font-size: 16px;
     line-height: 19px;
@@ -42,7 +43,7 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     cursor: pointer;
 }
-    
+
 .locat {
     width: 40px;
     height: 40px;
@@ -50,7 +51,7 @@
     margin-left: auto;
     display:grid;
     background:#6E707A;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
     color: white;
     border-radius: 20px;
     place-content: center;
@@ -81,13 +82,13 @@
     bottom: 0px;
     background-position: center;
     background-size:cover;
-    opacity: 10%;
+    opacity: 50%;
     top: 0px;
     left: 0px;
     background-image: url(/src/images/Cloud-background.png);
 }
 
-.weather_type_image {
+.weather-imagen {
     width: 55%; 
     height: 55%;
     display: flex;
@@ -98,15 +99,15 @@
     margin-left: auto;
     margin-right: auto;
     font-size: 8rem;
-    color: #E7E7EB;
+    color: white;
     line-height: 169px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'system-ui';
     font-style: normal;
     font-weight: 200;
 }
 
 .today_temp b {
-    color: #A09FB1;
+    color: #E7E7EB;
     font-size: 50%;
 }
     
@@ -115,14 +116,14 @@
     font-size: 36px;
     line-height: 42px;
     margin-top: 80px;
-    font-family: 'Raleway';
+    font-family: 'system-ui';
     margin-left: auto;
     width: auto ;
     height: 42px;
     margin-right: auto;
     font-style: normal; 
     text-align: center;
-    color: #A09FB1;
+    color: #E7E7EB;
 }
 
 .today-date {
@@ -132,29 +133,29 @@
 }
 
 .today,.dot,.today_date,.location_text {
-    font-family: 'Raleway';
+    font-family: 'system-ui';
     font-size: 18px;
     font-style: normal;
     line-height: 21px;
     font-weight: 500;
-    color: #88869D;
+    color: #E7E7EB;
 }
 
 .location {
     margin-left: auto;
-    color: #88869D;
+    color: #E7E7EB;
 }
 
 .location_text {
     width: auto;
-    height: 21px;
+    height: 20px;
     margin-right: auto;
     font-weight: 600;
 }
 
-.box2 {
+.cont-two {
     display: flex;
-    margin-top: 45px;
+    margin-top: 60px;
     gap: 5px;
 }
 
@@ -179,12 +180,15 @@
 }
 
 .container_weather {
-    width: 70%;
+    width: 100%;
     height: auto;
     display: flex;
-    color:#E7E7EB;
+    color: #E7E7EB;
     background-color: #100E1D;
     flex-direction: column;
+    background-image: url(/src/images/Cloud-background.png);
+    background-position: center;
+    background-size: contain;
 }
 
 .celcius_button,.fahrenheit_button {
@@ -193,7 +197,7 @@
     place-content: center;
     border-radius: 50px;
     display:grid;
-    background: #585676;
+    background: crimson;
     cursor: pointer;
 }
 
@@ -231,15 +235,15 @@
     gap: 15px;
 }
 
-.day_weather {
+.weather_day {
     width: 126px;
     height: 177px;
     text-align: center;
     background: #1E213A;
 }
 
-.tomorrow {
-    font-family: 'Raleway';
+.tom {
+    font-family: 'system-ui';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -247,7 +251,7 @@
     color: #E7E7EB;
 }
 
-.tomorrow_image {
+.imagen_tom {
     width: 56.44px;
     height: 62px;
     display: flex;
@@ -255,28 +259,28 @@
     margin-right: auto;
 }
 
-.temp_maxmin {
+.max_min_temperature {
     margin-top: 30px;
 }
 
-.max_temp {
+.temper_maxim {
     width: 33px;
     height: 19px;
     margin-right: 15px;
     font-weight: 500;
     font-size: 16px;
-    font-family: 'Raleway';
+    font-family: 'system-ui';
     color: #E7E7EB;
     font-style: normal;
     line-height: 19px;
 }
 
-.min_temp {
+.temper_minim {
     width: 30px;
     height: 19px;
     font-size: 16px;
     line-height: 19px;
-    font-family: 'Raleway';
+    font-family: 'system-ui';
     color: #A09FB1;
     font-style: normal;
     font-weight: 500;
@@ -288,8 +292,8 @@
     margin-left: 17.5%;
     font-style: normal;
     font-weight: 700;
-    font-family: 'Raleway';
-    color: #E7E7EB;
+    font-family: 'system-ui';
+    color: #3C47E9;
     font-size: 24px;
     line-height: 28px;
 }
@@ -320,7 +324,7 @@
     flex-direction: row;
 }
 
-.Hbox1,.Hbox2 {
+.one-box,.two-box {
     height: 100%;
     width: 47%;
     display: flex;
@@ -328,18 +332,18 @@
     flex-direction: column;
 }
 
-.Hbox3,.Hbox4 {
+.three-box,.four-box {
     height: 100%;
     width: 47%;
     text-align: center;
 }
 
-.Hbox1,.Hbox2,.Hbox3,.Hbox4 { 
+.one-box,.two-box,.three-box,.four-box { 
     background-color: #1E213A;
 }
 
-.Hbox1 p,.Hbox2 p,.Hbox3 p,.Hbox4 p {
-    font-family: 'Raleway';
+.one-box p,.two-box p,.three-box p,.four-box p {
+    font-family: 'system-ui';
     font-style: normal;
     font-size: 1em;
     color: #E7E7EB;
@@ -349,7 +353,7 @@
 }
 
 .mph {
-    font-family: 'Raleway';
+    font-family: 'system-ui';
     font-style: normal;
     line-height: 75px;
     font-size: 4rem;
@@ -378,7 +382,7 @@
     margin-left: auto;
     place-content: center;
     display:grid;
-    background-color:#6E707A;
+    background-color: #6E707A;
 }
 
 .navegation span {
@@ -393,7 +397,7 @@
     margin-left: 10px;
     margin-bottom: auto;
     font-style: normal;
-    font-family: 'Raleway';
+    font-family: 'system-ui';
     color: #E7E7EB;
     font-size: 15px;
     line-height: 16px;
@@ -406,7 +410,7 @@
     display: flex;
     overflow: hidden;
     font-size: 0.75rem;
-    background-color: #e9ecef;
+    background-color: #E7E7EB;
     border-radius: 0.25rem;
     margin-left: auto;
     margin-right: auto;
@@ -442,30 +446,14 @@
     font-size: 0.8rem;
     margin-right: auto;
     margin-left: auto;
-    font-family: 'Raleway';
+    font-family: 'system-ui';
     font-style: normal;
-    color: #A09FB1;
+    color: #E7E7EB;
     line-height: 14px;
 }
 
 .percent-sign span {
     float:right;
-}
-
-.created {
-    position: absolute;
-    font-weight: 500;
-    font-size: 1em;
-    left: 850px;
-    top: 980px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    color: #A09FB1;
-    line-height: 17px;
-}
-
-.created a {
-    color:#A09FB1
 }
 
 .icon {
@@ -488,6 +476,13 @@
     display: flex;
 }
 
+.footer {
+    color: black;
+    text-align: center;
+    font-family: 'Consolas';
+    padding: 10px;
+}
+
 .city-box {
     width: 100%;
     height: 64px;
@@ -497,24 +492,25 @@
 }
 
 .city-box:hover {
-    border: 1px solid #616475;
+    border: 1px solid #E7E7EB;
+    border-radius: 5px;
 } 
 
 .city-name {
-    width: 366px;
+    width: 370px;
     height:auto;
     margin-top: 20px;
     color: #E7E7EB;
-    padding-left: 12px;
-    font-family: 'Raleway';
+    padding-left: 10px;
+    font-family: 'system-ui';
     font-style: normal;
-    font-weight: 500;
-    font-size: 1rem;
-    line-height: 19px; 
+    font-weight: 400;
+    font-size: .9rem;
+    line-height: 18px; 
 }
 
 .city-box span {
-    color: #616475;
+    color: #E7E7EB;
     margin-top: auto;
     margin-bottom: auto;
     visibility: hidden;
@@ -546,7 +542,7 @@ button:focus {
 }
 
 .search_box input {
-    font-family: 'Raleway';
+    font-family: 'system-ui';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -567,12 +563,12 @@ button:focus {
 
 .search_input {
     position: relative; 
-    width: 75.3%;
+    width: 75.5%;
     margin-right: 15px;
 }
 
 .search_input span {
-    color: #616475;
+    color: #E7E7EB;
     position: absolute;
     left: 10px;
     top: 14px;
@@ -581,9 +577,10 @@ button:focus {
 
 .search_input input {
     height: 48px;
-    width: 100%;
+    width: 90%;
     background-color: transparent;
-    border: 2px solid #E7E7EB;
+    border: 2px solid #3C47E9;
+    border-radius: 5px;
 }
 
 .button_search {
@@ -598,22 +595,22 @@ button:focus {
 }
 
 .close {
-    margin-top: 15px;
+    margin-top: 35px;
     display: flex;
     flex-direction: row-reverse;
     width: 100%;
 }
 
 .close span {    
-    margin-right: 15px;
+    margin-right: 40px;
     cursor: pointer;
-    color:white;
-    font-size:25px;
+    color: chocolate;
+    font-size:30px;
 }
 
 @media only screen and (max-width: 800px) {
 
-    .box1 {
+    .cont-one {
         margin-top: 20px;
     }   
 
@@ -634,6 +631,7 @@ button:focus {
     .weather_type {
         margin-top:0px
     }
+    
     .today-date {
         margin-top:50px ;
     }
@@ -674,6 +672,7 @@ button:focus {
     .row1 {
         height: auto;
     }
+
     .row2 {
         height:auto;
         margin-top: 30px;
@@ -681,21 +680,21 @@ button:focus {
 
     .container_weather {
         width: 100%;
-        height: 1718px; 
+        height: 2000px; 
     }
-    .Hbox1,.Hbox2,.Hbox3,.Hbox4 {
+    .one-box,.two-box,.three-box,.four-box {
         width: 100%;                           
     }
 
-    .Hbox2,.Hbox4 { 
+    .two-box,.four-box { 
         margin-top: 30px;
     }
 
-    .Hbox1,.Hbox2 { 
+    .one-box,.two-box { 
         height: fit-content;
     }
 
-    .Hbox3,.Hbox4 { 
+    .three-box,.four-box { 
         height: fit-content;
     }
 
@@ -704,15 +703,7 @@ button:focus {
         margin-top: 0px;
     }
 
-    .created { 
-        position: inherit;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 75px;
-        text-align: center;
-    }
-
-    .day_weather {
+    .weather_day {
         width: 46%;
     }
 
@@ -739,7 +730,7 @@ button:focus {
     }
 
     .container_weather {
-        width: 65%;
+        width: 100%;
     }
 
     .temp_button {
@@ -764,13 +755,6 @@ button:focus {
         margin-bottom: 0px;
     }
 
-    .created {
-        position: inherit;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 45px;
-    }
-
     .today_hightlight { 
         margin-left: 5%;
         margin-top: 5px;
@@ -780,7 +764,7 @@ button:focus {
         width: 90%;
     }
 
-    .day_weather {
-        width:30% ;
+    .weather_day {
+        width: 30%;
     }
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
-const Search = (props) => {
+const Buscar = (props) => {
   const [SearchResult, setSearchResult] = useState([]);
   const [UserSearch, setUserSearch] = useState("");
   const [LoadCity, setLoadCity] = useState(true);
@@ -106,7 +106,6 @@ const Search = (props) => {
                 {city.name}
                 {city.state},{city.country}{" "}
               </div>
-              <span className="material-icons"></span>
             </div>
           ))
         ) : (
@@ -117,4 +116,4 @@ const Search = (props) => {
   );
 };
 
-export default Search;
+export default Buscar;

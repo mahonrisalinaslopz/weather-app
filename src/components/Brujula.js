@@ -1,4 +1,4 @@
-function CompassDirection(num) {
+function BrujulaDireccion(num) {
   var val = Math.floor(num / 22.5 + 0.5);
   var arr = [
     "N",
@@ -21,4 +21,4 @@ function CompassDirection(num) {
   return arr[val % 16];
 }
 
-export default CompassDirection;
+export default BrujulaDireccion;

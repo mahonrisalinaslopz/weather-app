@@ -1,10 +1,10 @@
 import React from "react";
-import Days from "../Days";
+import Days from "./Dias";
 
-const DateWeather = (props) => {
+const ClimaDatos = (props) => {
+  const Date = props.ForeDate;
   const Temp = props.ForeTemp;
   const Icon = props.ForeIcon;
-  const Date = props.ForeDate;
 
   return (
     <div className="forecast_weather">
@@ -47,4 +47,4 @@ const DateWeather = (props) => {
   );
 };
 
-export default DateWeather;
+export default ClimaDatos;
